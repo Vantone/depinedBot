@@ -22,7 +22,7 @@
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/Zlkcyber/depinedBot.git
+    git clone https://github.com/Vantone/depinedBot.git
     cd depinedBot
     ```
 
@@ -39,7 +39,7 @@
     ```sh
     nano proxy.txt
     ```
-5. Run the script:
+5. 启动脚本方式一:
     ```sh
     npm run start
     ```
@@ -49,6 +49,18 @@
     npm run autoreg
     ```
 - accounts information saved at `accounts.txt` and tokens auto saved to `tokens.txt`
+## 启动脚本方式二:
+
+ -  docker版本部
+   ```
+   cd  ~
+   git clone https://github.com/Vantone/depinedBot.git
+   cd depinedBot
+   docker pull node:20-alpine
+   docker run -itd --restart always   --name depined  -v /root/depinedBot:/root/depinedBot  -w /root/depinedBot  node:20-alpine1  sh -c 'npm install && npm run start '
+```
+
 ## ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 This project is licensed under the [MIT License](LICENSE).
+
