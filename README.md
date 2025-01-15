@@ -57,7 +57,7 @@
    git clone https://github.com/Vantone/depinedBot.git
    cd depinedBot
    docker pull node:20-alpine
-   docker run -itd --restart always   --name depined  -v /root/depinedBot:/root/depinedBot  -w /root/depinedBot  node:20-alpine1  sh -c 'npm install && npm run start '
+   docker run -itd --restart always   --name depined  -v /root/depinedBot:/root/depinedBot  -w /root/depinedBot  node:20-alpine  sh -c 'npm install && npm run start '
 ```
 
 ## ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
